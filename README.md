@@ -1,6 +1,9 @@
 # TeamManagementTool
 A set of scripts that take the tediousness out of managing multiple git repos.
 
+## Demo
+![](demo.gif)
+
 ## Purpose
 Suppose you have many git repos that you or your team manage. It could be that you have a main project and then multiple frameworks/pods that support that main project.
 
