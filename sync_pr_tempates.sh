@@ -12,7 +12,9 @@ else
 fi
 
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
+parent_path="$parent_path"/SupportingFiles
 current_basename=`basename "$current_directory"`
+
 
 cd "$current_directory"
 
