@@ -8,7 +8,7 @@ if [ "$#" -ne 1 ]; then
   read answer
   current_directory=$answer
 else
-  current_directory=$1
+  current_directory="$1"
 fi
 
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
@@ -21,7 +21,7 @@ cd "$current_directory"
 
 for dir in */
 do
-  cd $dir
+  cd "$dir"
 
   echo "
 
@@ -32,10 +32,10 @@ Local Branches:
   git branch
   echo -n "What git branch do you want to edit? > 
 "
-  read answer
+  read branch
   
   # TODO: make sure answer is real local branch
-  git checkout $answer
+  git checkout $branch
   
   echo -n "
     Do you want to push the changes immediately without reviewing? (Yy to continue; anything else to skip) > "
@@ -49,7 +49,7 @@ Local Branches:
 
   	git add .
     git commit -m "automated add/update PR template"
-    git push origin $answer
+    git push origin $branch
   fi
   
   cd ..
