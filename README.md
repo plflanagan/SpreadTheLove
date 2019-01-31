@@ -1,4 +1,4 @@
-# TeamManagementTool
+# Spread the Love!
 A set of scripts that take the tediousness out of managing multiple git repos.
 
 ## Demo
