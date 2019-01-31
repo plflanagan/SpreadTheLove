@@ -1,18 +1,24 @@
-<Feel free to use this as your pull request template, or make any updates you'd like. You will want to save yours in this directory as 'pull_request_template.md'>
+<Feel free to use this as your pull request template, or make any updates you'd like. You will want to save yours in this directory as 'pull_request_template.md'. 'pull_request_template.md' is ignored from git; so you also don't need to worry about your version affecting the repo if you do any pull requests on it. At the very least, you'll probably want to delete this first message and only keep everything below for your pull request template.>
 
-<This is a template for Pull Requests to help standardize our pull requests and make sure that they contain all the information we would like. Note that anything in carrots can be deleted, and is for explanation.>
+<This is a template for Pull Requests to help standardize our pull requests and make sure that they contain all the information we would like. Note that anything in carrots can be deleted, and is for explanation for how to fill out the template>
+
+<Before we get to you filling out the template, let's put everything into perspective. This PR template is to help get all the information included here for the innocent bystander. You've completed the task; you've fixed the bug; you've added the feature. To accomplish this, you've had to come to understand the codebase. Everything in this PR now seems obvious to you -- but it actually isn't for anyone else; nor will it be obvious to you when you come back to this in 6 months. So this may feel tedious but it's actually really valuable! Okay. Let's begin>
 
 ### <Title of Pull Request> 
 <Should be something like "IOS-123 - Title", where title is either the name of the task or something briefer yet still explanatory.>
 
 ### Jira Ticket
-[]() <Please put the Jira ticket here. For example, [IOS-1](https://unumdesign.atlassian.net/browse/IOS-1)>
+<Adjust the ticket below to match the ticket>
+[IOS-123- Fix the bug](https://website/IOS-123)
 
 ### Purpose
 <Please put the purpose of the Pull Request here. This often will be similar to the Jira ticket; so you don't need to go into too much detail since it is linked above. But it should be clear enough that I shouldn't have to read the Jira ticket in order to know what this work is about.>
 
-### Approach
-<How did you solve the problem?>
+### What this PR Accomplishes
+<How did you solve the problem? State this as if it were the message to a commit that describes all the work in the PR. As a very rough guide, the number of sentences here should be around the same number as the number of commits. 3 commits; 3 sentences. 10 commits; 10 sentences. This is not to say that you should write a sentence per commit -- the commit history already does that. The main point, though, is that you should make sure that this message is detailed enough actually to indicate the work you did. It could be that the 3 commits can be explained well with one sentence, or maybe 7 -- the point is to make sure that you are being detailed enough and thinking about sentences per commit can help you do that.>
+
+<Before you squash merge, replace the commit message with the text you put in this section. It will make for great communicative commit history. (This is why you should write this section as if it were a commit message describing all your work -- because it soon will be!>
+
 
 ### Screenshots/GIFS
 #### Before
